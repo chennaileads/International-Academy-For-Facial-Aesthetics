@@ -1,14 +1,14 @@
 @use "sass:math";
 :root {
-  --theme-color: #c28565;
-  --theme-color2: #ab6a49;
-  --title-color: #0f2d62;
+  --theme-color: #0F766E;
+  --theme-color2: #5E6B75;
+  --title-color: #0B1F33;
   --body-color: #6e6e6e;
   --smoke-color: #f9f3f0;
   --smoke-color2: #e8cdbf;
   --smoke-color3: #f4e8e1;
-  --black-color: #0f2d62;
-  --black-color2:#0f2d62;
+  --black-color: #0B1F33;
+  --black-color2:#0B1F33;
   --gray-color: #b2b2b2;
   --white-color: #ffffff;
   --light-color: #cdcdcd;
@@ -14963,10 +14963,10 @@ span.select2-selection.select2-selection--single:focus {
 .sec-shape:before {
   background: -webkit-linear-gradient(
     right,
-    #c28565 0%,
+    #0F766E 0%,
     rgba(194, 133, 101, 0) 100%
   );
-  background: linear-gradient(270deg, #c28565 0%, rgba(194, 133, 101, 0) 100%);
+  background: linear-gradient(270deg, #0F766E 0%, rgba(194, 133, 101, 0) 100%);
   margin-left: -38rem;
 }
 @media (max-width: 575px) {
@@ -14977,10 +14977,10 @@ span.select2-selection.select2-selection--single:focus {
 .sec-shape:after {
   background: -webkit-linear-gradient(
     left,
-    #c28565 0%,
+    #0F766E 0%,
     rgba(194, 133, 101, 0) 100%
   );
-  background: linear-gradient(90deg, #c28565 0%, rgba(194, 133, 101, 0) 100%);
+  background: linear-gradient(90deg, #0F766E 0%, rgba(194, 133, 101, 0) 100%);
   margin-left: 3rem;
 }
 @media (max-width: 575px) {
@@ -21405,7 +21405,7 @@ span.select2-selection.select2-selection--single:focus {
 .hero-style5 {
   position: relative;
   z-index: 6;
-  padding: 224px 0;
+  padding: 104px 0;
   max-width: 750px;
 }
 @media (max-width: 1299px) {
@@ -21845,13 +21845,13 @@ span.select2-selection.select2-selection--single:focus {
   background: -webkit-linear-gradient(
     right,
     rgba(194, 133, 101, 0) 4.24%,
-    #c28565 52.64%,
+    #0F766E 52.64%,
     rgba(194, 133, 101, 0) 99.06%
   );
   background: linear-gradient(
     270deg,
     rgba(194, 133, 101, 0) 4.24%,
-    #c28565 52.64%,
+    #0F766E 52.64%,
     rgba(194, 133, 101, 0) 99.06%
   );
   display: block;
