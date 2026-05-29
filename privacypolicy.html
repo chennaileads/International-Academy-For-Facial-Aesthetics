@@ -1,0 +1,989 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+  <!-- Mirrored from html.themehour.net/rasm/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 May 2026 10:19:24 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>International Academy For Facial Aesthetics</title>
+    <meta name="author" content="From ATSKY" />
+    <meta name="description" content="Facial Aesthetics" />
+    <meta name="keywords" content="Educate - Empower - Elevate" />
+    <meta name="robots" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+<link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/img/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon.ico"
+    />
+    <link rel="manifest" href="assets/img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    <link rel="stylesheet" href="assets/css/jquery.flipster.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  </head>
+  <style>
+         .floating-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Buttons Base */
+.contact-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* WhatsApp (Official Green) */
+.whatsapp {
+  background: #25D366;
+}
+
+/* Call (Professional Red) */
+.call {
+  background: #E53935;
+}
+
+/* Hover Effects */
+.contact-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Glow Effect */
+.whatsapp:hover {
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+}
+
+.call:hover {
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.6);
+}
+
+/* Floating Animation */
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.contact-btn {
+  animation: floatY 3s ease-in-out infinite;
+}
+
+.call {
+  animation-delay: 1.5s;
+}
+      /* Hero Overlay */
+    .service-item_icon{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#f5f5f5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.service-number{
+    font-size:32px;
+    font-weight:700;
+    color:#000;
+}
+  /* Service Card Equal Height */
+.service-item.style3{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Same Image Size */
+.service-item.style3 .service-item_img{
+    width:100%;
+    height:320px; /* Adjust height if needed */
+    overflow:hidden;
+    border-radius:12px 12px 0 0;
+}
+
+/* Make All Images Equal */
+.service-item.style3 .service-item_img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Content Equal Height */
+.service-item.style3 .service-item_content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Button Bottom Align */
+.service-item.style3 .line-btn{
+    margin-top:auto;
+}
+  .floating-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Buttons Base */
+.contact-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* WhatsApp (Official Green) */
+.whatsapp {
+  background: #25D366;
+}
+
+/* Call (Professional Red) */
+.call {
+  background: #E53935;
+}
+
+/* Hover Effects */
+.contact-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Glow Effect */
+.whatsapp:hover {
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+}
+
+.call:hover {
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.6);
+}
+
+/* Floating Animation */
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.contact-btn {
+  animation: floatY 3s ease-in-out infinite;
+}
+
+.call {
+  animation-delay: 1.5s;
+}
+  </style>
+  <body>
+  <div class="floating-contact">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/917200266446" target="_blank" class="contact-btn whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Call -->
+  <a href="tel:+917200266446" class="contact-btn call">
+    <i class="fas fa-phone"></i>
+  </a>
+
+</div>
+       <div class="th-menu-wrapper">
+      <div class="th-menu-area">
+        <div class="mobile-logo">
+          <a href="index.html"><img src="assets/img/logo1.png" alt="Rasm" /></a>
+          <div class="close-menu">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+          </div>
+        </div>
+        <div class="th-mobile-menu">
+          <ul>
+            <li class="">
+              <a href="index.html">Home</a>
+            
+            </li>
+         <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ 
+  
+    <header class="th-header header-layout7 header-layout8">
+      <div class="header-top">
+        <div class="container th-container">
+          <div
+            class="row justify-content-center justify-content-lg-end justify-content-lg-between align-items-center gy-2"
+          >
+            <div class="col-auto d-none d-lg-block">
+              <div class="header-links">
+                  <ul>
+                  <li>
+                    <i class="far fa-phone"></i
+                    ><a href="tel:+917200266446">+91 72002 66446</a>
+                  </li>
+                  <li>
+                    <i class="far fa-envelope"></i
+                    ><a href="mailto:admin@skafosaesthetics.com">admin@skafosaesthetics.com</a>
+                  </li>
+                  <!-- <li>
+                    <i class="fa-light fa-clock"></i>Mon - Sat: 8 AM - 15 PM
+                    Sunday Off
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="social-links">
+                <span class="social-title">Follow Us:</span>
+                <a href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-wrapper">
+        <div class="menu-area">
+          <div class="container th-container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
+                <div class="header-logo">
+                  <a href="index.html"
+                    ><img src="assets/img/logo1.png" alt="Rasm" style="height: 120px;"
+                  /></a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <nav class="main-menu d-none d-lg-inline-block">
+                  <ul>
+                    <li class="">
+                      <a href="index.html">Home</a>
+                     
+                    </li>
+                    <li><a href="courses.html">Our Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </nav>
+                <button class="th-menu-toggle d-inline-block d-lg-none">
+                  <i class="far fa-bars"></i>
+                </button>
+              </div>
+            <div class="col-auto d-none d-xl-block">
+                <div class="header-button">
+                 
+                 
+                 
+                  <a href="appointment.html" class="th-btn style3"
+                    >Appointment Now<i
+                      class="fa-regular fa-arrow-right ms-2"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="breadcumb-wrapper"
+      data-bg-src="assets/img/ban1.png"
+    >
+      <div class="container">
+        <div class="breadcumb-content">
+          <h2 class="breadcumb-title">Privacy Policy</h2>
+          <div class="breadcumb-menu-wrapper">
+            <ul class="breadcumb-menu">
+              <li><a href="index.html">Home</a></li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+ <section class="space-top space-extra-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <div class="page-single service-single">
+             
+              <div class="page-content">
+                <!-- <h2 class="">Body Massages</h2> -->
+                <p>
+                This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+
+<br><br>We use Your Personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.
+                </p>
+            
+                <h2 class="mb-20">Interpretation And Definitions</h2>
+                                <h3 class="mb-20">Interpretation</h3>
+
+                <p class="mb-4">
+               For the purposes of this Privacy Policy:
+
+<br><br>Account means a unique account created for You to access our Service or parts of our Service.
+
+<br><br>Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+
+<br><br>Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Skafos Men's Wellness, 1st Floor, Classic Towers, 1547, Trichy Rd, Highways Colony, Coimbatore, Tamil Nadu 641018
+
+<br><br>Cookies are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
+
+<br><br>Country refers to: Tamil Nadu, India
+
+<br><br>Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+
+<br><br>Personal Data is any information that relates to an identified or identifiable individual.
+
+<br><br>Service refers to the Website.
+
+<br><br>Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+
+<br><br>Third-party Social Media Service refers to any website or any social network website through which a User can log in or create an account to use the Service.
+
+<br><br>Usage Data refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+
+<br><br>Website refers to Skafos Men's Wellness, accessible from https://skafosaesthetics.com/
+
+<br><br>You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+
+<br><br>Collecting And Using Your Personal Data
+
+<br><br>Types Of Data Collected
+
+<br><br>Personal Data
+
+<br><br>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+                </p>
+                <div class="checklist style4">
+                  <ul>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Email address
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>First name and last name
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Phone number
+                    </li>
+                     <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Address, State, Province, ZIP/Postal code, City.
+                    </li>
+                     <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Usage Data
+                    </li>
+                  </ul>
+                </div>
+              
+                <p>
+                  Usage Data is collected automatically when using the Service.
+
+<br><br>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+<br><br>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+
+<br><br>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
+
+<br><br>Information From Third-Party Social Media Services
+
+<br><br>The Company allows You to create an account and log in to use the Service through the following Third-party Social Media Services:
+                </p>
+                 <div class="checklist style4">
+                  <ul>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Google
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Facebook
+                    </li>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Instagram
+                    </li>
+                     <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>Twitter
+                    </li>
+                     <li>
+                      <i class="fa-sharp fa-solid fa-circle-check"></i>LinkedIn
+                    </li>
+                  </ul>
+                </div>
+                <!-- <h3 class="mb-20">Massage Techniques</h3> -->
+                <p class="mb-0">
+                  If You decide to register through or otherwise grant us access to a Third-Party Social Media Service, We may collect Personal data that is already associated with Your Third-Party Social Media Service's account, such as Your name, Your email address, Your activities or Your contact list associated with that account.
+
+<br><br>You may also have the option of sharing additional information with the Company through Your Third-Party Social Media Service's account. If You choose to provide such information and Personal Data, during registration or otherwise, You are giving the Company permission to use, share, and store it in a manner consistent with this Privacy Policy.
+
+<br><br>Tracking Technologies And Cookies
+
+<br><br>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyse Our Service. The technologies we use may include:
+
+<br><br>Cookies or Browser Cookies. A cookie is a small file placed on Your Device. You can instruct your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if you do not accept Cookies, you may not be able to use some parts of our Service. Unless you have adjusted your browser settings so that it will refuse Cookies, our Service may use Cookies
+
+<br><br>Web Beacons. Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).
+
+<br><br>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser. You can learn more about cookies on the Terms Feed website article.
+
+<br><br>We use both Session and Persistent Cookies for the purposes set out below:
+
+<br><br>Necessary / Essential Cookies
+
+<br><br>Type: Session Cookies
+
+<br><br>Administered by: Us
+
+<br><br>Purpose: These Cookies are essential to provide you with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. without these cookies, the services that you have asked for cannot be provided, and We only use these Cookies to provide You with those services.
+
+<br><br>Cookies Policy / Notice Acceptance Cookies
+
+<br><br>Type: Persistent Cookies
+
+<br><br>Administered by: Us
+
+<br><br>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.
+
+<br><br>Functionality Cookies
+
+<br><br>Type: Persistent Cookies
+
+<br><br>Administered by: Us
+
+<br><br>Purpose: These Cookies allow us to remember choices you make when you use the Website, such as remembering your login details or language preference. The purpose of these cookies is to provide you with a more personal experience and to avoid you having to re-enter your preferences every time you use the Website.
+
+<br><br>For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy or the Cookies section of our Privacy Policy.
+
+<br><br>Use Of Your Personal Data
+
+<br><br>The Company may use Personal Data for the following purposes:
+
+<br><br>To provide and maintain our Service, including to monitor the usage of our Service.
+
+<br><br>To manage Your Account: to manage your registration as a user of the service. The Personal Data you provide can give you access to different functionalities of the Service that are available to you as a registered user.
+
+<br><br>For the performance of a contract: the development, compliance, and undertaking of the purchase contract for the products, items, or services you have purchased or of any other contract with us through the service.
+
+<br><br>To contact you: To contact you by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products, or contracted services, including the security updates, when necessary or reasonable for their implementation.
+
+<br><br>To provide you with news, special offers, and general information about other goods, services, and events which we offer that are similar to those that you have already purchased or enquired about, unless you have opted not to receive such information.
+
+<br><br>To manage your requests: To attend and manage your requests to us.
+
+<br><br>For business transfers: We may use your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which personal data held by us about our service users is among the assets transferred.
+
+<br><br>For other purposes: We may use your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and evaluating and improving our Service, products, services, marketing, and your experience.
+
+<br><br>We may share your personal information in the following situations:
+
+<br><br>With Service Providers: We may share your personal information with service providers to monitor and analyse the use of our Service, and to contact you.
+
+<br><br>For business transfers: We may share or transfer your personal information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+
+<br><br>With Affiliates: We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with us.
+
+<br><br>With business partners: We may share your information with our business partners to offer you certain products, services or promotions.
+
+<br><br>With other users: when you share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. If you interact with other users or register through a Third-Party social media service, Your contacts on the Third-Party Social media service may see Your name, profile, pictures and description of your activity. Similarly, other users will be able to view descriptions of your activity, communicate with you and view your profile.
+
+<br><br>With your consent: We may disclose your personal information for any other purpose with your consent.
+                </p>
+                <h2 class="mb-20">Retention Of Your Personal Data</h2>
+                                <p class="mb-0">
+                                    The company will retain your personal data only for as long as is necessary for the purposes set out in this privacy policy. We will retain and use your personal data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
+
+<br><br>The company will also retain usage data for internal analysis purposes. Usage data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
+</p>
+                <h2 class="mb-20">Transfer Of Your Personal Data</h2>
+<p class="mb-0">
+Your information, including Personal Data, is processed at the company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.
+<br><br>
+Your consent to this privacy policy followed by your submission of such information represents your agreement to that transfer.
+<br><br>
+The company will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your personal data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+</p>
+<h2 class="mb-20">Delete Your Personal Data</h2>
+<p class="mb-0">
+    You have the right to delete or request that we assist in deleting the personal data that We have collected about you.
+
+<br><br>Our service may give you the ability to delete certain information about you from within the service.
+
+<br><br>You may update, amend, or delete your information at any time by signing in to your account, if you have one, and visiting the account settings section that allows you to manage your personal information. You may also contact us to request access to, correct, or delete any personal information that you have provided to us.
+
+<br><br>Please note, however, that we may need to retain certain information when we have a legal obligation or lawful basis to do so.
+</p>
+<h2 class="mb-20">Disclosure Of Your Personal Data</h2>
+<h3 class="mb-20">Business Transactions</h3>
+<p class="mb-0">
+If the company is involved in a merger, acquisition or asset sale, Your personal data may be transferred. We will provide notice before your personal data is transferred and becomes subject to a different privacy policy.
+
+
+</p>
+<h3 class="mb-20">Law Enforcement</h3>
+<p class="mb-0">
+Under certain circumstances, the company may be required to disclose your personal data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+
+</p>
+<h3 class="mb-20">Other Legal Requirements</h3>
+<p class="mb-0">
+The Company may disclose your personal data in the good faith belief that such action is necessary to:
+
+<br><br>Comply with a legal obligation
+
+<br><br>Protect and defend the rights or property of the Company
+
+<br><br>Prevent or investigate possible wrongdoing in connection with the Service
+
+<br><br>Protect the personal safety of Users of the Service or the public Protect against legal liability.
+</p>
+<h3 class="mb-20">Security Of Your Personal Data</h3>
+<p class="mb-0">
+The security of Your Personal Data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+
+
+
+</p>
+<h3 class="mb-20">Children's Privacy</h3>
+<p class="mb-0">
+Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+
+<br><br>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
+
+
+</p>
+<h3 class="mb-20">Links To Other Websites</h3>
+<p class="mb-0">
+<br><br>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.
+
+<br><br>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services
+
+
+</p>
+<h3 class="mb-20">Changes To This Privacy Policy</h3>
+<p class="mb-0">
+We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
+
+<br><br>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+
+<br><br>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+
+</p>
+<h3 class="mb-20">Contact Us</h3>
+<p class="mb-0">
+
+If you have any questions about this Privacy Policy, You can contact us:
+
+<br><br>By email:admin@skafosaesthetics.com By phone number: +91 72002 66446
+
+
+</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="contact-form-wrapper">
+            <form action="mail.php" method="POST" class="contact-form ajax-contact">
+
+    <h2 class="form-title text-center">Have Any Questions?</h2>
+
+    <div class="row">
+
+        <!-- Full Name -->
+        <div class="form-group col-md-6">
+            <i class="fa-light fa-user"></i>
+            <input type="text"
+                   class="form-control"
+                   name="name"
+                   placeholder="Full Name"
+                   required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group col-md-6">
+            <i class="fa-light fa-envelope"></i>
+            <input type="email"
+                   class="form-control"
+                   name="email"
+                   placeholder="Email Address"
+                   required>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group col-md-6">
+            <i class="fa-light fa-phone"></i>
+            <input type="tel"
+                   class="form-control"
+                   name="phone"
+                   placeholder="Phone Number"
+                   required>
+        </div>
+
+        <!-- Course Selection -->
+        <div class="form-group col-md-6">
+            <i class="fa-light fa-book-open"></i>
+
+            <select name="course"
+                    class="form-select nice-select"
+                    required>
+
+                <option value="" selected disabled hidden>
+                    Select Course
+                </option>
+
+                <option value="PG Diploma in Clinical Cosmetology">
+                    PG Diploma in Clinical Cosmetology
+                </option>
+
+                <option value="Fellowship in Clinical Cosmetology">
+                    Fellowship in Clinical Cosmetology
+                </option>
+
+                <option value="Fellowship in Facial Aesthetics">
+                    Fellowship in Facial Aesthetics
+                </option>
+
+                <option value="Masters in Injectables">
+                    Master’s in Injectables
+                </option>
+
+            </select>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group col-12">
+            <i class="fa-light fa-comment"></i>
+
+            <textarea name="message"
+                      rows="4"
+                      class="form-control"
+                      placeholder="Tell us about your interest or enquiry"></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="form-btn col-12">
+            <button type="submit" class="th-btn fw-btn">
+                Submit Now
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <p class="form-messages mb-0 mt-3"></p>
+
+</form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer
+      class="footer-wrapper footer-layout5"
+      data-bg-src="assets/img/update_2/bg/footer_bg_1.jpg"
+    >
+      <div class="widget-area">
+        <div class="container th-container">
+          <div class="row justify-content-between">
+            <div class="col-md-6 col-xl-3 col-xxl-3">
+              <div class="widget footer-widget">
+                <div class="th-widget-about">
+                  <div class="about-logo">
+                     <h3 class="widget_title">About Us</h3>
+                    <!-- <a href="index.html"
+                      ><img src="assets/img/logo1.png" alt="Rasm" style="height: 100px;"
+                    /></a> -->
+                  </div>
+                  <p class="about-text">
+                   International Academy for Facial Aesthetics provides advanced clinical cosmetology and facial aesthetics training with hands-on practical expertise, empowering professionals to excel in the world of aesthetic medicine.
+                  </p>
+                 
+                  <div class="th-social footer-social mt-40">
+                    <a href="https://www.facebook.com/"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.twitter.com/"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-auto">
+              <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Quick links</h3>
+                <div class="menu-all-pages-container">
+                  <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Our Courses </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-auto">
+              <div class="widget widget_nav_menu footer-widget">
+                <h3 class="widget_title">Courses</h3>
+                <div class="menu-all-pages-container">
+                  <ul class="menu">
+                    <li><a href="courses.html">PG Diploma in Clinical Cosmetology</a></li>
+                    <li><a href="courses.html">Fellowship in Clinical Cosmetology</a></li>
+                    <li><a href="courses.html">Fellowship in Facial Aesthetics</a></li>
+                    <li><a href="courses.html">Master’s in Injectables</a></li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3 col-xxl-2">
+              <div class="widget footer-widget footer-widget">
+                <h4 class="widget_title">Contact Us</h4>
+                <div class="th-widget-about">
+                    <p class="footer-info">
+                      <i class="fa-sharp fa-solid fa-phone"></i
+                      ><a class="text-inherit" href="tel:+917200266446"
+                        >+91 72002 66446</a
+                      >
+                    </p>
+                    <p class="footer-info">
+                      <i class="fas fa-envelope"></i
+                      ><a class="text-inherit" href="mailto:admin@skafosaesthetics.com"
+                        >admin@skafosaesthetics.com</a
+                      >
+                    </p>
+                     <p class="footer-info">
+                      <i class="fas fa-location"></i
+                      ><a class="text-inherit" href="mailto:info@rasm.com"
+                        >1st Floor, Classic Towers, 1547, Trichy Rd, Highways Colony, Coimbatore, Tamil Nadu 641018.</a
+                      >
+                    </p>
+                  </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+     <div class="copyright-wrap">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left Side Copyright -->
+            <div class="col-lg-6 col-md-6 text-center text-md-start">
+                <p class="copyright-text mb-0">
+                    <i class="fal fa-copyright"></i>
+                    <script>document.write(new Date().getFullYear())</script>
+                    International Academy for Facial Aesthetics. All Rights Reserved.
+                    <br>
+                    Developed By 
+                    <a class="text-theme" href="https://chennailleads.com/" target="_blank">
+                        Chennai Leads
+                    </a>
+                </p>
+            </div>
+
+            <!-- Right Side Privacy Policy -->
+            <div class="col-lg-6 col-md-6 text-center text-md-end mt-2 mt-md-0">
+                <a href="privacypolicy.html" class="text-theme">
+                    Privacy Policy
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+      <div class="scroll-top">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path
+            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            style="
+              transition: stroke-dashoffset 10ms linear 0s;
+              stroke-dasharray: 307.919, 307.919;
+              stroke-dashoffset: 307.919;
+            "
+          ></path>
+        </svg>
+      </div>
+    </footer>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.flipster.min.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/appear-2.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/jquery.datetimepicker.min.js"></script>
+    <script src="assets/js/tilt.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+     <script>
+  const toggleBtn = document.getElementById("callToggle");
+  const enquiryBox = document.getElementById("enquiryBox");
+
+  toggleBtn.addEventListener("click", () => {
+    enquiryBox.style.display =
+      enquiryBox.style.display === "block" ? "none" : "block";
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".floating-contact")) {
+      enquiryBox.style.display = "none";
+    }
+  });
+  toggleBtn.addEventListener("click", () => {
+  enquiryBox.classList.toggle("show");
+});
+</script>
+  </body>
+  <!-- Mirrored from html.themehour.net/rasm/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 May 2026 10:19:24 GMT -->
+</html>
